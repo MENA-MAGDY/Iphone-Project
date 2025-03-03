@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/assests/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Apple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* القسم الخاص بالصورة */
+        .image-section {
+            flex: 1;
+            background-image: url('/assests/Untitled.png'); /* استبدل بالمسار الفعلي للصورة */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* القسم الخاص بالمحتوى */
+        .content-section {
+            flex: 1;
+            background-color: #ffffff; /* خلفية بيضاء */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+
+        .content-section h1 {
+            font-size: 3em;
+            color: #D4AF37; /* لون ذهبي */
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333; /* لون نص داكن */
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            max-width: 600px;
+            color: #555; /* لون نص أفتح قليلاً */
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #D4AF37;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #c19229;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* تحسين العرض للشاشات الصغيرة */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .image-section {
+                height: 50vh;
+                flex: none;
+            }
+
+            .content-section {
+                height: auto;
+                flex: none;
+            }
+
+            .content-section h1 {
+                font-size: 2em;
+            }
+
+            .content-section h2 {
+                font-size: 1.8em;
+            }
+
+            .content-section p {
+                font-size: 1em;
+            }
+
+            .btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القسم الخاص بالصورة -->
+    <div class="image-section"></div>
+
+    <!-- القسم الخاص بالمحتوى -->
+    <div class="content-section">
+        <h2>Innovation at its Best</h2> 
+        <h1>Welcome to Apple</h1>
+        <p>
+            Apple Inc. is an American multinational technology company that designs, develops, and sells consumer electronics, computer software, and online services. It is best known for its series of personal computers, the iPhone smartphone, the iPad tablet computer, the iPod portable media player, and the MacBook series of laptops. Founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in 1976, Apple revolutionized the technology industry with its innovative products and intuitive design philosophy.
+        </p>
+        <a href="content.html" class="btn">Browse Products</a>
+    </div>
+
+</body>
+</html>
